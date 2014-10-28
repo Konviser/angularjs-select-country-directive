@@ -1,6 +1,8 @@
 'use strict';
 
-angular.module('cqDirectives')
+angular.module('selectCountry',[]);
+
+angular.module('selectCountry')
 	.directive('countrySelect', function($compile){
 		var countries = [
 			  {name:'Select Country', code: ''},
@@ -271,7 +273,6 @@ angular.module('cqDirectives')
 		elem.replaceWith(newElem);
 
     };
-
 
     return {
     	restrict: 'E',
